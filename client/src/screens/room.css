@@ -1,0 +1,253 @@
+.logo{
+    font-size: 40px;
+    border-bottom: 1px solid greenyellow;
+    /* background-color: greenyellow; */
+    /* width: fit-content;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 40px; 
+    /* border-radius: 50px;
+    padding: 5px 10px; */
+    /* margin-top: 5px; */
+}
+.logo>span{
+    color: greenyellow;
+}
+.main_room{
+    background-color: #202224;
+    height: 100vh;
+    color: white;
+}
+.call_frame{
+    display: flex;
+    justify-content: center;
+    height: 71%;
+    /* align-items: center; */
+}
+.my_call,
+.client_call{
+
+    margin: 30px;
+    position: relative;
+    width: 33%;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30%;
+    align-items: center;
+}
+.my_call{
+ grid-area: my;
+}
+.client_call{
+ grid-area: client;
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+.my_call>div:nth-child(1)>video,
+.client_call>div:nth-child(1)>video{
+    border-radius: 10px;
+    border: 2px solid rgba(191, 255, 96, 0.678);
+    /* border: 2px solid rgb(179, 179, 179); */
+}
+
+.call_btn>.options{
+    background-color: #7474748f;
+    border-radius: 67px;
+    width: fit-content;
+    margin: auto;
+}
+.call_btn>.options>button{
+    background-color: #3e3e3f;
+    padding: 14px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: 19px;
+    margin: 10px;
+}
+.call_btn>.options>.pic_call_btn{
+    background-color: #13991a;
+    padding: 14px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: 19px;
+    margin: 10px;
+    transform: rotate(90deg);
+}
+.call_btn>.options>.cut_call_btn{
+    background-color: #ff3131;
+    padding: 10px 15px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    transform: rotate(90deg);
+}
+.name{
+    position: absolute;
+    background-color: #565656b8;
+    padding: 2px 10px;
+    border-radius: 5px;
+    top: -1px;
+    margin: 10px;
+    left: 0;
+}
+
+.highlight{
+    background-color: #13991a !important;
+}
+
+.gameAreaN,
+.boardAreaN{
+    display: none;
+}
+.gameAreaN{
+    grid-area: game;
+}
+
+.boardAreaN{
+    grid-area: board;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .call_frame{
+        /* display: grid;
+        grid-template-areas: 
+        'board board'
+        'client my'; */
+    }
+
+    /* .my_call,
+    .client_call{
+        width: 33%;
+        margin: auto;
+        bottom: -21%;
+    } */
+    .my_call{
+        width: 40%;
+        margin: auto;
+        height: fit-content;
+        left: 3%;
+        top: 55%;
+        position: absolute;
+    }
+    .client_call{
+        width: 40%;
+        margin: auto;
+        left: 55%;
+        height: fit-content;
+        /* left: 3%; */
+        top: 55%;
+        position: absolute;
+    }
+    .my_call_non{
+        width: 40%;
+        margin: auto;
+        bottom: 6%;
+        top: -15%;
+        position: relative;
+    }
+    .client_call_non{
+        width: 40%;
+        margin: auto;
+        bottom: 6%;
+        top: -15%;
+        left: 4%;
+        position: relative;
+    }
+
+    .call_frame_non{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+
+@media screen and (max-width: 600px) {
+    
+    .my_call{
+        width: 40%;
+        margin: auto;
+        height: fit-content;
+        left: 3%;
+        top: 55%;
+        position: absolute;
+    }
+    .client_call{
+        width: 40%;
+        margin: auto;
+        left: 55%;
+        height: fit-content;
+        /* left: 3%; */
+        top: 55%;
+        position: absolute;
+    }
+
+    .my_call_non{
+        width: 66%;
+        margin: auto;
+        bottom: 6%;
+        left: 0%;
+        top: -17%;
+        position: relative;
+    }
+    .client_call_non{
+        width: 66%;
+        margin: auto;
+        bottom: 6%;
+        left: 0%;
+        top: -17%;
+        position: relative;
+    }
+
+    .name{
+        font-size: 10px;
+    }
+
+  }
+
+@media screen and (max-width: 500px) {
+    
+    .logo{
+        margin-bottom: 5px;
+    }
+    .my_call{
+        width: 40%;
+        margin: auto;
+        height: fit-content;
+        left: 3%;
+        top: 64%;
+        position: absolute;
+    }
+    .client_call{
+        width: 40%;
+        margin: auto;
+        left: 55%;
+        height: fit-content;
+        /* left: 3%; */
+        top: 64%;
+        position: absolute;
+    }
+
+    .my_call_non,
+    .client_call_non{
+        width: 66%;
+        margin: auto;
+        bottom: 6%;
+        left: 0%;
+        top: -15%;
+        position: relative;
+    }
+
+  }
+
